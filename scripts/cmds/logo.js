@@ -106,7 +106,7 @@ module.exports = {
     case "smoke":
       apiUrl = `https://api.lolhuman.xyz/api/photooxy1/smoke?apikey=0a637f457396bf3dcc21243b&text=${text}`;
       message = "here's the [𝑺𝑴𝑶𝑲𝑬] Logo created:";
-      
+
 
       break;
     case "captainamerica":
@@ -219,7 +219,7 @@ break;
     case "naruto":
       apiUrl = `https://rest-api-2.faheem007.repl.co/api/photooxy/naruto?text=${text}`;
       message = "here's the [𝑵𝑨𝑹𝑼𝑻𝑶] Logo created:";
-			  break;
+                          break;
     case "dragonfire":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/dragonfire?text=${text}`;
       message = "here's the [Pubg] Logo created:";
@@ -227,19 +227,19 @@ break;
     case "avater":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/lolnew?text=${text}`;
       message = "here's the [AVATAR] Logo created:";
-				break;
+                                break;
     case "pubgavatar":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/pubgavatar?text=${text}`;
       message = "here's the [PUBGAVATAR] Logo created:";
-				break;
+                                break;
     case "nightstars":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/nightstars?text=${text}`;
       message = "here's the [NIGHTSTARS] Logo created:";
-				break;
+                                break;
     case "sunlight":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/sunlight?text=${text}`;
       message = "here's the [SUNLIGHT] Logo created:";
-				break;
+                                break;
     case "cloud":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/cloud?text=${text}`;
       message = "here's the [CLOUD] Logo created:";
@@ -247,11 +247,11 @@ break;
     case "pig":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/pig?text=${text}`;
       message = "here's the [PIG] Logo created:";
-				break;
+                                break;
     case "caper":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/caper?text=${text}`;
       message = "here's the [CAPER] Logo created:";
-				 break;
+                                 break;
     case "horror":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/horror?text=${text}`;
       message = "here's the [HORROR] Logo created:";
@@ -259,7 +259,7 @@ break;
     case "writestatus":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/writestatus?text=${text}&text2=Your%20Quotes%20In%20Herm`;
       message = "here's the [WRITESTATUS] Logo created:";
-				 break;
+                                 break;
     case "teamlogo":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/teamlogo?text=${text}`;
       message = "here's the [TEAMLOGO] Logo created:";
@@ -271,11 +271,11 @@ break;
     case "queen":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/queen?text=${text}`;
       message = "here's the [QUEEN] Logo created:";
-				 break;
+                                 break;
     case "fbc3":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/facebookcover3?text=${text}`;
       message = "here's the [FBC3] Logo created:";
-				 break;
+                                 break;
     case "tatto":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/tatto?text=${text}`;
       message = "here's the [TATTO] Logo created:";
@@ -287,31 +287,31 @@ break;
     case "oceansea":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/photooxy/oceansea?text=${text}`;
       message = "here's the [SEA] Logo created:";
-				 break;
+                                 break;
     case "shirt4":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/shirt4?text=${text}&text2=20`;
       message = "here's the [SHIRT4] Logo created:";
-				 break;
+                                 break;
     case "shirt5":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/shirt5?text=${text}&text2=20`;
       message = "here's the [SHIRT5] Logo created:";
-				 break;
+                                 break;
     case "shirt6":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/shirt6?text=${text}&text2=20`;
       message = "here's the [SHIRT6] Logo created:";
-				 break;
+                                 break;
     case "lovemsg":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/photooxy/lovemessage?text=${text}`;
       message = "here's the [LOVEMSG] Logo created:";
-				 break;
+                                 break;
     case "chstm":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/Chirstmasvideo?text=${text}&type=video/mp4`;
       message = "here's the [CHIRTMAS] Logo created:";
-				 break;
+                                 break;
     case "christmas2":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/Christmas2?text=${text}`;
       message = "here's the [CHRISTMAS] Logo created:";
-				 break;
+                                 break;
     case "icetext":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/icetext?url=https://i.imgur.com/BTPUTRQ.jpg&text=${text}`;
       message = "here's the [ICETEXT] Logo created:";
@@ -319,15 +319,15 @@ break;
     case "butterfly":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/photooxy/butterfly?text=${text}`;
       message = "here's the [BUTTERFLY 🦋] Logo created:";
-				break;
+                                break;
     case "coffe":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/photooxy/coffecup?text=${text}`;
       message = "here's the [COFFEE] Logo created:";
-				 break;
+                                 break;
     case "love":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/lovetext?text=${text}`;
       message = "here's the [LOVETEXT] Logo created:";
-				 break;
+                                 break;
     case "intro2":
       apiUrl = `https://faheem-vip-010.faheem001.repl.co/api/ephoto/intro2?text=${text}&type=video/mp4`;
       message = "here's the [AVATER] Logo created:";

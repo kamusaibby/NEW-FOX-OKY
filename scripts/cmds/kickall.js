@@ -9,7 +9,7 @@ module.exports = {
 		longDescription: {
 			en: 'kickall members of the group'
 		},
-		category: 'Box Chat',
+		category: 'box chat',
 		guide: {
 			en: '{p}kickall on/off'
 		}

@@ -1,9 +1,9 @@
 module.exports = {
   config: {
     name: "imagine",
-    aliases:["text2img", "gen"],
+    aliases:["imagine"],
     version: "1.0",
-    author: "♡︎ 𝐻𝑎𝑠𝑎𝑛 ♡︎",
+    author: "𝐻𝑎𝑠𝑎𝑛 🤡",
     countDown: 3, 
     role: 0,
     longDescription: {
@@ -32,8 +32,8 @@ module.exports = {
       const startTime = new Date().getTime();
 
 
-      
-      const API = `https://hasan-all-apis.onrender.com/imagine?prompt=${encodeURIComponent(prompt)}`;
+      const a = global.GoatBot.config.api.hasan;
+      const API = `${a}/imagine?prompt=${encodeURIComponent(prompt)}`;
 
       
       const imageStream = await global.utils.getStreamFromURL(API);

@@ -12,7 +12,7 @@ module.exports.config = {
   author: "dipto",
   role: 2,
   description: "Take a screenshot of a website",
-  category: "utility",
+  category: "tool",
   guide: { en: "screenshot [URL]" },
   coolDowns: 5,
 };

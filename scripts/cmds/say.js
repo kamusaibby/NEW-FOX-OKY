@@ -1,51 +1,50 @@
-const fs = require("fs");
-const axios = require("axios");
-const googleTTS = require("google-tts-api");
+const axios = require('axios');
 
 module.exports = {
-  config: {
-    name: "say",
-    aliases: ["speak", "kotha"],
-    version: "1.1",
-    author: "✨ Eren Yeh ✨",
-    countDown: 5,
-    role: 0,
-    shortDescription: {
-      en: "Convert text to Bangla voice"
-    },
-    longDescription: {
-      en: "Bot will speak your text in Bangla using Google TTS"
-    },
-    category: "media",
-    guide: {
-      en: "{pn} <your bangla text>"
+        config: {
+                name: "say",
+                aliases: ["ko"],
+                version: "1.0",
+                author: "Siam the frog>🐸",
+                countDown: 5,
+                role: 0,
+                shortDescription: "Say something Bangla will say it clearly",
+                longDescription: "female vs Voice",
+                category: "media",
+                guide: "{pn} {{<say>}}"
+        },
+
+        onStart: async function ({ api, message, args, event}) {
+    let lng = "bn"
+    let say;
+                if (lng.includes(args[0])) {
+      lng = args[0]
+      args.shift()
+      say = encodeURIComponent(args.join(" "))
+    } else { 
+      say = args.join(" ")
     }
-  },
+        const extractText = () => {
+        if (type === "message_reply") {
+          return event.messageReply.body;
+        } else if (mentions.length > 0) {
+          return mentions[0].body;
+        } else {
+          return chat;
+        }
+      }
+                        try {
+                                let url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${lng}&client=tw-ob&q=${say}`
 
-  onStart: async function ({ args, message }) {
-    const text = args.join(" ");
-    if (!text) return message.reply("দয়া করে একটি বার্তা লিখুন!");
 
-    try {
-      const url = googleTTS.getAudioUrl(text, {
-        lang: 'bn',
-        slow: false,
-        host: 'https://translate.google.com'
-      });
+        message.reply({body:"",
+                                attachment: await global.utils.getStreamFromURL(url)
+                      })
 
-      const path = `${__dirname}/voice.mp3`;
-      const res = await axios.get(url, { responseType: 'arraybuffer' });
-      fs.writeFileSync(path, Buffer.from(res.data, "utf-8"));
 
-      await message.reply({
-        body: `🔈 বললাম: ${text}`,
-        attachment: fs.createReadStream(path)
-      });
+                        } catch (e) {
+        console.log(e)
+        message.reply(` <'3 𝑷𝒍𝒆𝒂𝒔𝒆 𝒆𝒏𝒕𝒆𝒓 𝒂 𝒎𝒆𝒔𝒔𝒂𝒈𝒆 `) }
 
-      fs.unlinkSync(path);
-    } catch (err) {
-      console.error(err);
-      message.reply("❌ ভয়েস বানাতে সমস্যা হয়েছে!");
-    }
-  }
+        }
 };
